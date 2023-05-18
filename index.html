@@ -6,7 +6,7 @@
   </head>
   <body>
     <nav> <!--DaisyUI responsive drop down menu-->
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 text-white">
             <div class="navbar-start">
                 <a class="btn btn-ghost normal-case text-xl">Uber</a>
                 <ul class="menu menu-horizontal px-1 hidden lg:flex"> <!--Full screen nav bar-->
@@ -60,30 +60,39 @@
                 <a class="btn rounded bg-black text-white border-none">Log In</a>
                 <a class="btn rounded-full bg-white text-black">Sign Up</a>
                 <!--Small screen nav bar icon with dropdowns-->
-                <div class="dropdown">
+                <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li tabindex="0">
-                        <a class="justify-between">
-                            Company
-                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-                        </a>
-                        <ul class="p-2">
-                            <li><a class="bg-white w-52 text-black">About us</a></li>
-                            <li><a class="bg-white w-52 text-black">Our offerings</a></li>
-                            <li><a class="bg-white w-52 text-black">How Uber works</a></li>
-                            <li><a class="bg-white w-52 text-black">Global citizenship</a></li>
-                            <li><a class="bg-white w-52 text-black">Explore</a></li>
-                            <li><a class="bg-white w-52 text-black">Newsroom</a></li>
-                            <li><a class="bg-white w-52 text-black">Investor relations</a></li>
-                            <li><a class="bg-white w-52 text-black">Blog</a></li>
-                            <li><a class="bg-white w-52 text-black">Careers</a></li>
-                        </ul>
+                    <ul tabindex="0" class="dropdown-content mt-3 p-2 shadow bg-white text-black rounded-box w-96">
+                        <li tabindex="0" class="collapse collapse-arrow">
+                            <div class="collapse-title hover:bg-gray-100">
+                                Company
+                            </div>
+                            <div class="collapse-content">
+                                <ul class="">
+                                    <li class="hover:bg-gray-100"><a class="m-4">About us</a></li>
+                                    <li class="hover:bg-gray-100"><a class="m-4">Our offerings</a></li>
+                                    <li class="hover:bg-gray-100"><a class="m-4">How Uber works</a></li>
+                                    <li class="hover:bg-gray-100"><a class="m-4">Global citizenship</a></li>
+                                    <li class="hover:bg-gray-100"><a class="m-4">Explore</a></li>
+                                    <li class="hover:bg-gray-100"><a class="m-4">Newsroom</a></li>
+                                    <li class="hover:bg-gray-100"><a class="m-4">Investor relations</a></li>
+                                    <li class="hover:bg-gray-100"><a class="m-4">Blog</a></li>
+                                    <li class="hover:bg-gray-100"><a class="m-4">Careers</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li><a>Safety</a></li>
-                        <li><a>Help</a></li>
+                        <li tabindex="0" class="collapse">
+                            <div class="collapse-title hover:bg-gray-100">
+                                Safety
+                            </div>
+                        </li>
+                        <li tabindex="0" class="collapse">
+                            <div class="collapse-title hover:bg-gray-100">
+                                Help
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -132,8 +141,8 @@
             </div>
         </div> 
     </main>
-    <section class="w-full text-black bg-blue-100 flex" style="background-image: url();"> <!--Reimaged for business section-->
-        <div class="bg-white w-3/4 mx-24 my-14">    
+    <section class="w-full text-black bg-blue-100 flex" style="background-image: url(cityscape.jpg);"> <!--Reimaged for business section-->
+        <div class="w-3/4 mx-24 my-14">    
             <h1 class="text-5xl font-bold">The Uber you know, reimagined for business</h1><br>
             <p>A platform for managing global rides and meals, and local deliveries, for companies of any size.</p><br>
             <button class="btn text-white rounded">Get started</button>
@@ -199,15 +208,15 @@
     <section class="w-full bg-gray-100 p-10 text-black"> <!--Apps buttons section-->
         <h1 class="text-4xl font-bold mx-20">There's more to love in the apps</h1>
         <div class="md:flex mx-14">
-            <div class="w-1/2 bg-white m-5 p-8 flex justify-between">
-                <img src="ubersquareicon.webp" class="w-40 h-40">
+            <div class="w-1/2 bg-white m-5 p-8 flex justify-between items-center">
+                <img src="ubersquareicon.webp" class="w-40 h-40 m-2">
                 <h2 class="text-2xl font-bold">Download the Driver app</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
             </div>
-            <div class="w-1/2 bg-white m-5 p-8 flex justify-between">
-                <img src="ubersquareicon.webp" class="w-40 h-40"><br>
+            <div class="w-1/2 bg-white m-5 p-8 flex justify-between items-center">
+                <img src="ubersquareicon.webp" class="w-40 h-40 m-2"><br>
                 <h2 class="text-2xl font-bold">Download the Uber app</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
