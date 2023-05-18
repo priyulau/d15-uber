@@ -59,7 +59,7 @@
                     Products</a>
                 <a class="btn rounded bg-black text-white border-none">Log In</a>
                 <a class="btn rounded-full bg-white text-black">Sign Up</a>
-                <!--Small screen nav bar icon with dropdowns-->
+<!--Small screen nav bar icon with dropdowns-->
                 <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -108,7 +108,7 @@
                     <a href="#ride" class="p-3 w-20 text-center hover:border-b-4 border-black"><img src="caricon.svg" class="p-3">Ride</a>
                 </div>
             </div>
-            <div class="carousel bg-white text-black max-w-xl"> <!--White box below tabs-->
+            <div class="carousel bg-white text-black"> <!--White box below tabs-->
                 <div id="drive" class="carousel-item w-full"> 
                     <div class="m-10">
                         <h1 class="mb-5 text-5xl font-bold mx-3 my-10">Get in the driver's seat and get paid</h1>
@@ -142,48 +142,50 @@
         </div> 
     </div>
     <div class="lg:hidden"> <!--Small/mobile screen view-->
-        <div class="bg-white text-black px-10 pt-3 border-b"> <!--Container for top tabs with icons-->
-            <div class="justify-between carousel"> <!--Top tabs with icons-->
-                <a href="#drive" class="p-3 w-20 text-center hover:border-b-4 border-black"><img src="baricon.svg" class="p-3">Drive or deliver</a> 
-                <a href="#eats" class="p-3 w-20 text-center hover:border-b-4 border-black"><img src="forkspoonicon.svg" class="p-3">Eat</a> 
-                <a href="#ride" class="p-3 w-20 text-center hover:border-b-4 border-black"><img src="caricon.svg" class="p-3">Ride</a>
+        <div class="">
+            <div class="bg-white text-black px-10 pt-3 border-b"> <!--Container for top tabs with icons-->
+                <div class="justify-between carousel"> <!--Top tabs with icons-->
+                    <a href="#drive2" class="p-3 w-20 text-center hover:border-b-4 border-black"><img src="baricon.svg" class="p-3">Drive or deliver</a> 
+                    <a href="#eats2" class="p-3 w-20 text-center hover:border-b-4 border-black"><img src="forkspoonicon.svg" class="p-3">Eat</a> 
+                    <a href="#ride2" class="p-3 w-20 text-center hover:border-b-4 border-black"><img src="caricon.svg" class="p-3">Ride</a>
+                </div>
+            </div>
+            <div class="carousel bg-white text-black"> <!--White box below tabs-->
+                <div id="drive2" class="carousel-item w-full"> 
+                    <div class="m-10">
+                        <h1 class="mb-5 text-5xl font-bold mx-3 my-10">Get in the driver's seat and get paid</h1>
+                        <p class="mb-5 w-4/5 mx-3 my-10">Drive on the platform with the largest network of active riders.</p>
+                        <button class="btn btn-black rounded m-3">Sign up to drive</button><br><br>
+                        <a href="https://www.uber.com/us/en/drive/?uclick_id=efea2fe8-a1aa-4925-a9cd-889c3e36b3f7" class="underline">Learn more about driving and delivering</a>
+                    </div>
+                </div>
+                <div id="eats2" class="carousel-item w-full">
+                    <div class="m-10">
+                        <h1 class="mb-5 text-5xl font-bold mx-3 my-10">Discover delicious eats</h1>
+                        <p class="mb-5 w-4/5 mx-3 my-10">Order delivery from restaurants you love.</p>
+                        <button class="btn btn-black rounded m-3">Order now</button><br><br>
+                        <a href="https://www.uber.com/us/en/drive/?uclick_id=efea2fe8-a1aa-4925-a9cd-889c3e36b3f7" class="underline">Own a restaurant? Partner with Uber Eats</a>
+                    </div>
+                </div>
+                <div id="ride2" class="carousel-item w-full">
+                    <div class="m-10">
+                        <h1 class="mb-5 text-5xl font-bold mx-3 my-10">Request a ride now</h1>
+                        <div>
+                            <input type="textbox" name="pickup" id="pickup" placeholder="Enter pickup location" size="40" class="p-3 m-5 bg-gray-100"><br>
+                            <input type="textbox" name="pickup" id="pickup" placeholder="Enter destination" size="40" class="p-3 m-5 bg-gray-100">
+                        </div>
+                        <div class="flex">
+                            <button class="btn btn-black rounded m-3">Request now</button><br><br>
+                            <button class="btn btn-black rounded m-3">Schedule for later</button><br><br>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
-        <div class="carousel bg-white text-black"> <!--White box below tabs-->
-            <div id="drive" class="carousel-item w-full"> 
-                <div class="m-10">
-                    <h1 class="mb-5 text-5xl font-bold mx-3 my-10">Get in the driver's seat and get paid</h1>
-                    <p class="mb-5 w-4/5 mx-3 my-10">Drive on the platform with the largest network of active riders.</p>
-                    <button class="btn btn-black rounded m-3">Sign up to drive</button><br><br>
-                    <a href="https://www.uber.com/us/en/drive/?uclick_id=efea2fe8-a1aa-4925-a9cd-889c3e36b3f7" class="underline">Learn more about driving and delivering</a>
-                </div>
-            </div>
-            <div id="eats" class="carousel-item w-full bg-white">
-                <div class="m-10">
-                    <h1 class="mb-5 text-5xl font-bold mx-3 my-10">Discover delicious eats</h1>
-                    <p class="mb-5 w-4/5 mx-3 my-10">Order delivery from restaurants you love.</p>
-                    <button class="btn btn-black rounded m-3">Order now</button><br><br>
-                    <a href="https://www.uber.com/us/en/drive/?uclick_id=efea2fe8-a1aa-4925-a9cd-889c3e36b3f7" class="underline">Own a restaurant? Partner with Uber Eats</a>
-                </div>
-            </div>
-            <div id="ride" class="carousel-item w-full bg-white">
-                <div class="m-10">
-                    <h1 class="mb-5 text-5xl font-bold mx-3 my-10">Request a ride now</h1>
-                    <div>
-                        <input type="textbox" name="pickup" id="pickup" placeholder="Enter pickup location" size="40" class="p-3 m-5 bg-gray-100"><br>
-                        <input type="textbox" name="pickup" id="pickup" placeholder="Enter destination" size="40" class="p-3 m-5 bg-gray-100">
-                    </div>
-                    <div class="flex">
-                        <button class="btn btn-black rounded m-3">Request now</button><br><br>
-                        <button class="btn btn-black rounded m-3">Schedule for later</button><br><br>
-                    </div>
-                </div>
-            </div> 
-            </div>
-        <div>
+    </div>
+        <div class="lg:hidden">
             <img src="drivebackground.webp">
         </div>
-    </div> 
     </main>
     <section class="w-full text-black bg-blue-100 flex" style="background-image: url(cityscape.jpg);"> <!--Reimaged for business section-->
         <div class="w-3/4 mx-24 my-14">    
@@ -267,7 +269,7 @@
                   </svg>                  
             </div>
         </div>
-        </section>
+    </section>
     </section>
     <section class="w-full bg-white p-10 text-black"> <!--Sign up buttons section-->
         <div class="sm:flex mx-14">
